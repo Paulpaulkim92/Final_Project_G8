@@ -1,0 +1,393 @@
+
+paulsik@Mac Final_Paul % ls
+main.c			tokenizing.h
+tokenizing.c		tokenizing_testing.txt
+paulsik@Mac Final_Paul % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+/Users/paulsik/Documents/Final_Paul/.git/ 안의 빈 깃 저장소를 다시 초기화했습니다
+paulsik@Mac Final_Paul % git config --global user.name "Paul Kim"
+paulsik@Mac Final_Paul % git config --global user.email "pkim31@myseneca.ca"
+paulsik@Mac Final_Paul % git config --global user.name
+Paul Kim
+paulsik@Mac Final_Paul % git config user.email
+pkim31@myseneca.ca
+paulsik@Mac Final_Paul % git remote add origin https://github.com/Paulpaulkim92/Final_Project_G8.git
+paulsik@Mac Final_Paul % git remote -v
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (fetch)
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (push)
+paulsik@Mac Final_Paul % git add .
+paulsik@Mac Final_Paul % git status
+현재 브랜치 master
+
+아직 커밋이 없습니다
+
+커밋할 변경 사항:
+  (스테이지 해제하려면 "git rm --cached <파일>..."을 사용하십시오)
+	새 파일:       .DS_Store
+	새 파일:       main.c
+	새 파일:       tokenizing.c
+	새 파일:       tokenizing.h
+	새 파일:       tokenizing_testing.txt
+
+paulsik@Mac Final_Paul % git commit -m "v1"
+[master (최상위-커밋) 2a9725c] v1
+ 5 files changed, 201 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 main.c
+ create mode 100644 tokenizing.c
+ create mode 100644 tokenizing.h
+ create mode 100644 tokenizing_testing.txt
+paulsik@Mac Final_Paul % git branch -M main
+paulsik@Mac Final_Paul % git push -u origin main
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+ ! [rejected]        main -> main (fetch first)
+error: 레퍼런스를 'https://github.com/Paulpaulkim92/Final_Project_G8.git'에 푸시하는데 실패했습니다
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+paulsik@Mac Final_Paul % git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0 (from 0)
+오브젝트 묶음 푸는 중: 100% (5/5), 897 bytes | 179.00 KiB/s, 완료.
+https://github.com/Paulpaulkim92/Final_Project_G8 URL에서
+ * branch            main       -> FETCH_HEAD
+ * [새로운 브랜치]   main       -> origin/main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+paulsik@Mac Final_Paul % git push origin main
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: 레퍼런스를 'https://github.com/Paulpaulkim92/Final_Project_G8.git'에 푸시하는데 실패했습니다
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+paulsik@Mac Final_Paul % git add .
+paulsik@Mac Final_Paul % git commit -m "v1"
+현재 브랜치 main
+커밋할 사항 없음, 작업 폴더 깨끗함
+paulsik@Mac Final_Paul % git push origin main
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: 레퍼런스를 'https://github.com/Paulpaulkim92/Final_Project_G8.git'에 푸시하는데 실패했습니다
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋할 사항 없음, 작업 폴더 깨끗함
+paulsik@Mac Final_Paul % git 
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+다음은 여러가지 상황에서 자주 사용하는 깃 명령입니다:
+
+작업 공간 시작 (참고: git help tutorial)
+   clone     저장소를 복제해 새 디렉터리로 가져옵니다
+   init      빈 깃 저장소를 만들거나 기존 저장소를 다시 초기화합니다
+
+변경 사항에 대한 작업 (참고: git help everyday)
+   add       파일 내용을 인덱스에 추가합니다
+   mv        파일, 디렉터리, 심볼릭 링크를 옮기거나 이름을 바꿉니다
+   restore   Restore working tree files
+   rm        파일을 작업 폴더에서 제거하고 인덱스에서도 제거합니다
+
+커밋 내역과 상태 보기 (참고: git help revisions)
+   bisect    이진 탐색으로 버그를 만들어낸 커밋을 찾습니다
+   diff      커밋과 커밋 사이, 커밋과 작업 내용 사이 등의 바뀐 점을 봅니다
+   grep      패턴과 일치하는 줄을 표시합니다
+   log       커밋 기록을 표시합니다
+   show      여러가지 종류의 오브젝트를 표시합니다
+   status    작업 폴더 상태를 표시합니다
+
+커밋 내역을 키우고, 표시하고, 조작하기
+   branch    브랜치를 만들거나, 삭제하거나, 목록을 출력합니다
+   commit    바뀐 사항을 저장소에 기록합니다
+   merge     여러 개의 개발 내역을 하나로 합칩니다
+   rebase    커밋을 다른 베이스 끝의 최상위에서 적용합니다
+   reset     현재 HEAD를 지정한 상태로 재설정화합니다
+   switch    Switch branches
+   tag       태그를 만들거나, 표시하거나, 삭제하거나, GPG 서명을 검증합니다
+
+협동 작업 (참고: git help workflows)
+   fetch     다른 저장소에서 오브젝트와 레퍼런스를 다운로드합니다
+   pull      다른 저장소 또는 다른 로컬 브랜치에서 가져오거나 통합합니다
+   push      원격 레퍼런스 및 그와 관련된 오브젝트를 업데이트합니다
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+paulsik@Mac Final_Paul % git log
+commit 2a9725c8d5106ce4a8a36914ce29dfc0dca40044 (HEAD -> main)
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 14:57:26 2024 -0500
+
+    v1
+paulsik@Mac Final_Paul % ls
+main.c			tokenizing.h
+tokenizing.c		tokenizing_testing.txt
+paulsik@Mac Final_Paul % git pull origin main --rebase
+https://github.com/Paulpaulkim92/Final_Project_G8 URL에서
+ * branch            main       -> FETCH_HEAD
+Successfully rebased and updated refs/heads/main.
+paulsik@Mac Final_Paul % git push origin main
+오브젝트 나열하는 중: 8, 완료.
+오브젝트 개수 세는 중: 100% (8/8), 완료.
+Delta compression using up to 8 threads
+오브젝트 압축하는 중: 100% (7/7), 완료.
+오브젝트 쓰는 중: 100% (7/7), 3.00 KiB | 3.00 MiB/s, 완료.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+   ee4d78c..be5b78b  main -> main
+paulsik@Mac Final_Paul % git log
+commit be5b78bfe43121269000f8d3926c756697cb52e3 (HEAD -> main, origin/main)
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 14:57:26 2024 -0500
+
+    v1
+
+commit ee4d78ccd326a7881e01723b4ee6e329f0329355
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Tue Dec 3 11:55:26 2024 -0500
+
+    v1
+paulsik@Mac Final_Paul % git fetch origin main
+https://github.com/Paulpaulkim92/Final_Project_G8 URL에서
+ * branch            main       -> FETCH_HEAD
+paulsik@Mac Final_Paul % git log origin/main
+commit be5b78bfe43121269000f8d3926c756697cb52e3 (HEAD -> main, origin/main)
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 14:57:26 2024 -0500
+
+    v1
+
+commit ee4d78ccd326a7881e01723b4ee6e329f0329355
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Tue Dec 3 11:55:26 2024 -0500
+
+    v1
+paulsik@Mac Final_Paul % 
+
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋하도록 정하지 않은 변경 사항:
+  (무엇을 커밋할지 바꾸려면 "git add/rm <파일>..."을 사용하십시오)
+  (use "git restore <file>..." to discard changes in working directory)
+	삭제함:        manipulating .c
+	삭제함:        manipulating.h
+	수정함:        tokenizing.c
+	수정함:        tokenizing.h
+	수정함:        tokenizing_testing.txt
+
+추적하지 않는 파일:
+  (커밋할 사항에 포함하려면 "git add <파일>..."을 사용하십시오)
+	git_status_log4_screenshot.txt
+
+커밋할 변경 사항을 추가하지 않았습니다 ("git add" 및/또는 "git commit -a"를
+사용하십시오)
+paulsik@Mac Final_Paul % git add.
+git: 'add.'은(는) 깃 명령이 아닙니다. 'git --help'를 참고하십시오.
+
+가장 비슷한 명령은
+	add
+paulsik@Mac Final_Paul % clear
+
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋하도록 정하지 않은 변경 사항:
+  (무엇을 커밋할지 바꾸려면 "git add/rm <파일>..."을 사용하십시오)
+  (use "git restore <file>..." to discard changes in working directory)
+	삭제함:        manipulating .c
+	삭제함:        manipulating.h
+	수정함:        tokenizing.c
+	수정함:        tokenizing.h
+	수정함:        tokenizing_testing.txt
+
+추적하지 않는 파일:
+  (커밋할 사항에 포함하려면 "git add <파일>..."을 사용하십시오)
+	git_status_log4_screenshot.txt
+
+커밋할 변경 사항을 추가하지 않았습니다 ("git add" 및/또는 "git commit -a"를
+사용하십시오)
+paulsik@Mac Final_Paul % git add .
+paulsik@Mac Final_Paul % git commit -m "v2"
+[main 884e3a8] v2
+ 6 files changed, 354 insertions(+), 72 deletions(-)
+ create mode 100644 git_status_log4_screenshot.txt
+ delete mode 100644 manipulating .c
+ delete mode 100644 manipulating.h
+paulsik@Mac Final_Paul % git remote -v
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (fetch)
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (push)
+paulsik@Mac Final_Paul % git push origin main
+오브젝트 나열하는 중: 10, 완료.
+오브젝트 개수 세는 중: 100% (10/10), 완료.
+Delta compression using up to 8 threads
+오브젝트 압축하는 중: 100% (6/6), 완료.
+오브젝트 쓰는 중: 100% (6/6), 5.76 KiB | 5.76 MiB/s, 완료.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+   be5b78b..884e3a8  main -> main
+paulsik@Mac Final_Paul % 
+
+
+Type a few sentences separated by dot (q - to quit):
+....
+Type a few sentences separated by dot (q - to quit):
+This is a sentence. 123 !@#. Another sentence.
+Sentence #1 is 'This is a sentence'
+Sentence #2 is ' 123 !@#'
+Sentence #3 is ' Another sentence'
+Type a few sentences separated by dot (q - to quit):
+This is a very long single sentence without any delimiters or stops it just keeps going and going
+Sentence #1 is 'This is a very long single sentence without any delimiters or stops it just keeps going and going'
+Type a few sentences separated by dot (q - to quit):
+This is a sentence.
+Sentence #1 is 'This is a sentence'
+Type a few sentences separated by dot (q - to quit):
+This is the first sentence.   . Another sentence..
+Sentence #1 is 'This is the first sentence'
+Sentence #2 is '   '
+Sentence #3 is ' Another sentence'
+Type a few sentences separated by dot (q - to quit):
+.
+Type a few sentences separated by dot (q - to quit):
+Sentence 1. Sentence 2. Sentence 3. Sentence 4. Sentence 5. Sentence 6. Sentence 7. Sentence 8. Sentence 9. Sentence 10. Sentence 11. Sentence 12.
+Sentence #1 is 'Sentence 1'
+Sentence #2 is ' Sentence 2'
+Sentence #3 is ' Sentence 3'
+Sentence #4 is ' Sentence 4'
+Sentence #5 is ' Sentence 5'
+Sentence #6 is ' Sentence 6'
+Sentence #7 is ' Sentence 7'
+Sentence #8 is ' Sentence 8'
+Sentence #9 is ' Sentence 9'
+Sentence #10 is ' Sentence 10'
+Sentence #11 is ' Sentence 11'
+Sentence #12 is ' Sentence 12'
+Type a few sentences separated by dot (q - to quit):
+.................................................................................................................................................................................................................................................
+Type a few sentences separated by dot (q - to quit):
+q
+*** Start of Tokenizing Words Demo ***
+1 - Tokenize Words (space-separated)
+2 - Tokenize Phrases (comma-separated)
+3 - Tokenize Sentences (dot-separated)
+0 - Exit Tokenizing
+Your choice: 0
+*** End of Tokenizing Phrases Demo ***
+
+paulsik@Mac Final_Paul % clear
+
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋하도록 정하지 않은 변경 사항:
+  (무엇을 커밋할지 바꾸려면 "git add <파일>..."을 사용하십시오)
+  (use "git restore <file>..." to discard changes in working directory)
+	수정함:        git_status_log4_screenshot.txt
+	수정함:        tokenizing.c
+	수정함:        tokenizing_testing.txt
+
+커밋할 변경 사항을 추가하지 않았습니다 ("git add" 및/또는 "git commit -a"를
+사용하십시오)
+paulsik@Mac Final_Paul % git add .
+paulsik@Mac Final_Paul % git commit -m "v3"   
+[main 5741ea3] v3
+ 3 files changed, 180 insertions(+), 6 deletions(-)
+paulsik@Mac Final_Paul % git branch
+* main
+paulsik@Mac Final_Paul % git remote -v
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (fetch)
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (push)
+paulsik@Mac Final_Paul % git push origin main
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+ ! [rejected]        main -> main (fetch first)
+error: 레퍼런스를 'https://github.com/Paulpaulkim92/Final_Project_G8.git'에 푸시하는데 실패했습니다
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+paulsik@Mac Final_Paul % git pull origin main --rebase
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+오브젝트 묶음 푸는 중: 100% (4/4), 1.51 KiB | 772.00 KiB/s, 완료.
+https://github.com/Paulpaulkim92/Final_Project_G8 URL에서
+ * branch            main       -> FETCH_HEAD
+   884e3a8..a35d028  main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+paulsik@Mac Final_Paul % git push origin main
+오브젝트 나열하는 중: 9, 완료.
+오브젝트 개수 세는 중: 100% (9/9), 완료.
+Delta compression using up to 8 threads
+오브젝트 압축하는 중: 100% (5/5), 완료.
+오브젝트 쓰는 중: 100% (5/5), 2.11 KiB | 2.11 MiB/s, 완료.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+   a35d028..1866075  main -> main
+paulsik@Mac Final_Paul % 
+
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 17:43:26 2024 -0500
+
+    v3
+
+commit a35d02860c5b2945e693d061a44042c004bbe98e
+Author: andreia006 <andreiabanny23@gmail.com>
+Date:   Fri Dec 6 16:48:45 2024 -0500
+
+    v1
+
+commit 884e3a8f8fcd12919311961b42066c39cc7884d8
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 16:26:23 2024 -0500
+
+    v2
+
+commit be5b78bfe43121269000f8d3926c756697cb52e3
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 14:57:26 2024 -0500
+
+    v1
+
+commit ee4d78ccd326a7881e01723b4ee6e329f0329355
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Tue Dec 3 11:55:26 2024 -0500
+
+    v1
+paulsik@Mac Final_Paul % 
+
