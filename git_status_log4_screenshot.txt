@@ -197,3 +197,67 @@ Date:   Tue Dec 3 11:55:26 2024 -0500
 
     v1
 paulsik@Mac Final_Paul % 
+
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋하도록 정하지 않은 변경 사항:
+  (무엇을 커밋할지 바꾸려면 "git add/rm <파일>..."을 사용하십시오)
+  (use "git restore <file>..." to discard changes in working directory)
+	삭제함:        manipulating .c
+	삭제함:        manipulating.h
+	수정함:        tokenizing.c
+	수정함:        tokenizing.h
+	수정함:        tokenizing_testing.txt
+
+추적하지 않는 파일:
+  (커밋할 사항에 포함하려면 "git add <파일>..."을 사용하십시오)
+	git_status_log4_screenshot.txt
+
+커밋할 변경 사항을 추가하지 않았습니다 ("git add" 및/또는 "git commit -a"를
+사용하십시오)
+paulsik@Mac Final_Paul % git add.
+git: 'add.'은(는) 깃 명령이 아닙니다. 'git --help'를 참고하십시오.
+
+가장 비슷한 명령은
+	add
+paulsik@Mac Final_Paul % clear
+
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋하도록 정하지 않은 변경 사항:
+  (무엇을 커밋할지 바꾸려면 "git add/rm <파일>..."을 사용하십시오)
+  (use "git restore <file>..." to discard changes in working directory)
+	삭제함:        manipulating .c
+	삭제함:        manipulating.h
+	수정함:        tokenizing.c
+	수정함:        tokenizing.h
+	수정함:        tokenizing_testing.txt
+
+추적하지 않는 파일:
+  (커밋할 사항에 포함하려면 "git add <파일>..."을 사용하십시오)
+	git_status_log4_screenshot.txt
+
+커밋할 변경 사항을 추가하지 않았습니다 ("git add" 및/또는 "git commit -a"를
+사용하십시오)
+paulsik@Mac Final_Paul % git add .
+paulsik@Mac Final_Paul % git commit -m "v2"
+[main 884e3a8] v2
+ 6 files changed, 354 insertions(+), 72 deletions(-)
+ create mode 100644 git_status_log4_screenshot.txt
+ delete mode 100644 manipulating .c
+ delete mode 100644 manipulating.h
+paulsik@Mac Final_Paul % git remote -v
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (fetch)
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (push)
+paulsik@Mac Final_Paul % git push origin main
+오브젝트 나열하는 중: 10, 완료.
+오브젝트 개수 세는 중: 100% (10/10), 완료.
+Delta compression using up to 8 threads
+오브젝트 압축하는 중: 100% (6/6), 완료.
+오브젝트 쓰는 중: 100% (6/6), 5.76 KiB | 5.76 MiB/s, 완료.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+   be5b78b..884e3a8  main -> main
+paulsik@Mac Final_Paul % 
+

@@ -1,16 +1,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define BUFFER_SIZE 300
+#include <stdio.h>
 #include "tokenizing.h"
 
 
 
-	/* Version 1 */
+
 void tokenizing(void) {
 	char choice[BUFFER_SIZE];
 	do {
 		printf("*** Start of Tokenizing Words Demo ***\n"); //Prompt for start.
 		printf("1 - Tokenize Words (space-separated)\n");
 		printf("2 - Tokenize Phrases (comma-separated)\n");
+		printf("3 - Tokenize Sentences (dot-separated)\n");
 		printf("0 - Exit Tokenizing\n");
 		printf("Your choice: ");
 		fgets(choice, BUFFER_SIZE, stdin);
@@ -66,19 +68,48 @@ void tokenizing(void) {
 						// Continue tokenizing the string from the last position where it left off.
 					}
 				}
+				
 			} while (strcmp(phrases, "q") != 0);
 			// Exit the loop when the user inputs "q".
 		}
+		else if (strcmp(choice, "3") == 0) {
+			/* Version 3 */
+			char sentences[BUFFER_SIZE]; // Buffer to store input sentences.
+			char* nextSentence = NULL;   // Pointer to hold each sentence token.
+			int sentencesCounter;        // Counter to track the number of sentences processed.
+
+			do {
+				printf("Type a few sentences separated by dot (q - to quit):\n");
+				fgets(sentences, BUFFER_SIZE, stdin); // Read input from stdin.
+				sentences[strlen(sentences) - 1] = '\0'; // Replace newline character with a null terminator.
+
+				if (strcmp(sentences, "q") != 0) {
+					nextSentence = strtok(sentences, "."); // Tokenize the first sentence using '.' as the delimiter.
+					sentencesCounter = 1; // Initialize the sentence counter to 1.
+
+					while (nextSentence) { // While there are tokens remaining:
+						printf("Sentence #%d is '%s'\n", sentencesCounter++, nextSentence);
+						nextSentence = strtok(NULL, "."); // Continue tokenizing the string from the last position.
+					}
+				}
+			} while (strcmp(sentences, "q") != 0);
+		}
+		
 		else if (strcmp(choice, "0") != 0) {
 			printf("Invalid selection. Please choose:\n");
-			printf("1 - Tokenize Words\n");
-			printf("2 - Tokenize Phrases\n");
+			printf("1 - Tokenize Words (space-separated)\n");
+			printf("2 - Tokenize Phrases (comma-separated)\n");
+			printf("3 - Tokenize Sentences (dot-separated)\n");
 			printf("0 - Exit Tokenizing\n");
 		}
 	} while (strcmp(choice, "0") != 0);
 	printf("*** End of Tokenizing Phrases Demo ***\n\n"); // Prompt for the end of the demo.
 }
 
-/* Version 3 */
-//insert here
-
+#ifdef TESTING_MAIN
+int main(void) {
+	// Run the tokenizing function directly for testing
+	tokenizing();
+	return 0;
+}
+#endif
