@@ -1,0 +1,120 @@
+which module to run?
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - Finish
+Your selection: 4
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+a
+Word #1 is 'a'
+Type a few words separated by space (q - to quit):
+
+Type a few words separated by space (q - to quit):
+This is a test
+Word #1 is 'This'
+Word #2 is 'is'
+Word #3 is 'a'
+Word #4 is 'test'
+Type a few words separated by space (q - to quit):
+Maximal Edge Case This is a test input string designed to contain more than 300 characters. It includes multiple words, numbers like 12345, and special characters like !@#$%^&*. The purpose of this input is to test the program's ability to handle long strings without errors or unexpected behaviors. Let's continue adding more text to make sure it exceeds the buffer size.
+Word #1 is 'Maximal'
+Word #2 is 'Edge'
+Word #3 is 'Case'
+Word #4 is 'This'
+Word #5 is 'is'
+Word #6 is 'a'
+Word #7 is 'test'
+Word #8 is 'input'
+Word #9 is 'string'
+Word #10 is 'designed'
+Word #11 is 'to'
+Word #12 is 'contain'
+Word #13 is 'more'
+Word #14 is 'than'
+Word #15 is '300'
+Word #16 is 'characters.'
+Word #17 is 'It'
+Word #18 is 'includes'
+Word #19 is 'multiple'
+Word #20 is 'words,'
+Word #21 is 'numbers'
+Word #22 is 'like'
+Word #23 is '12345,'
+Word #24 is 'and'
+Word #25 is 'special'
+Word #26 is 'characters'
+Word #27 is 'like'
+Word #28 is '!@#$%^&*.'
+Word #29 is 'The'
+Word #30 is 'purpose'
+Word #31 is 'of'
+Word #32 is 'this'
+Word #33 is 'input'
+Word #34 is 'is'
+Word #35 is 'to'
+Word #36 is 'test'
+Word #37 is 'the'
+Word #38 is 'program's'
+Word #39 is 'ability'
+Word #40 is 'to'
+Word #41 is 'handle'
+Word #42 is 'long'
+Word #43 is 'strings'
+Word #44 is 'without'
+Word #45 is 'errors'
+Word #46 is 'or'
+Word #47 is 'unexpected'
+Word #48 is 'behaviors'
+Type a few words separated by space (q - to quit):
+Word #1 is 'Let's'
+Word #2 is 'continue'
+Word #3 is 'adding'
+Word #4 is 'more'
+Word #5 is 'text'
+Word #6 is 'to'
+Word #7 is 'make'
+Word #8 is 'sure'
+Word #9 is 'it'
+Word #10 is 'exceeds'
+Word #11 is 'the'
+Word #12 is 'buffer'
+Word #13 is 'size.'
+Type a few words separated by space (q - to quit):
+
+Type a few words separated by space (q - to quit):
+"               "
+Word #1 is '"'
+Word #2 is '"'
+Type a few words separated by space (q - to quit):
+
+Type a few words separated by space (q - to quit):
+This          is           a       test.
+Word #1 is 'This'
+Word #2 is 'is'
+Word #3 is 'a'
+Word #4 is 'test.'
+Type a few words separated by space (q - to quit):
+123 !@# test.
+Word #1 is '123'
+Word #2 is '!@#'
+Word #3 is 'test.'
+Type a few words separated by space (q - to quit):
+quit
+Word #1 is 'quit'
+Type a few words separated by space (q - to quit):
+q
+***End of Tokenizing Words Demo ***
+
+which module to run?
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - Finish
+Your selection: 0
+
+\\Mac\Home\Documents\1st semester\CPR101NBB\Finalproject\CPR_Finalproject_G8\ARM64\Debug\CPR_Finalproject_G8.exe (process 10136) exited with code 0 (0x0).
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
