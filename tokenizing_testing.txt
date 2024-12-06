@@ -1,3 +1,5 @@
+//Version 1
+
 which module to run?
 1 - Fundamentals
 2 - Manipulating
@@ -118,3 +120,77 @@ Your selection: 0
 \\Mac\Home\Documents\1st semester\CPR101NBB\Finalproject\CPR_Finalproject_G8\ARM64\Debug\CPR_Finalproject_G8.exe (process 10136) exited with code 0 (0x0).
 To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
 Press any key to close this window . . .
+
+
+//Version 2
+Your choice: 2
+Type a few phrases separated by comma (q - to quit):
+2 
+Phrase #1 is '2'
+Type a few phrases separated by comma (q - to quit):
+,start with comma,ends with comma,
+Phrase #1 is 'start with comma'
+Phrase #2 is 'ends with comma'
+Type a few phrases separated by comma (q - to quit):
+hello@world,123!test,#hashtag
+Phrase #1 is 'hello@world'
+Phrase #2 is '123!test'
+Phrase #3 is '#hashtag'
+Type a few phrases separated by comma (q - to quit):
+q
+*** Start of Tokenizing Words Demo ***
+1 - Tokenize Words (space-separated)
+2 - Tokenize Phrases (comma-separated)
+0 - Exit Tokenizing
+Your choice: 0
+*** End of Tokenizing Phrases Demo ***
+
+paulsik@Mac Final_Paul % clear
+
+paulsik@Mac Final_Paul % ./tokenizing_test
+*** Start of Tokenizing Words Demo ***
+1 - Tokenize Words (space-separated)
+2 - Tokenize Phrases (comma-separated)
+0 - Exit Tokenizing
+Your choice: 2
+Type a few phrases separated by comma (q - to quit):
+this is, a test, example
+Phrase #1 is 'this is'
+Phrase #2 is ' a test'
+Phrase #3 is ' example'
+Type a few phrases separated by comma (q - to quit):
+hello , world , test
+Phrase #1 is 'hello '
+Phrase #2 is ' world '
+Phrase #3 is ' test'
+Type a few phrases separated by comma (q - to quit):
+,
+Type a few phrases separated by comma (q - to quit):
+just one phrase
+Phrase #1 is 'just one phrase'
+Type a few phrases separated by comma (q - to quit):
+
+Type a few phrases separated by comma (q - to quit):
+,,,
+Type a few phrases separated by comma (q - to quit):
+ 
+Phrase #1 is ' '
+Type a few phrases separated by comma (q - to quit):
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna ac tortor suscipit euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut scelerisque, odio nec efficitur convallis, libero nisi facilisis urna, vitae lacinia neque libero et metus.
+Phrase #1 is 'Lorem ipsum dolor sit amet'
+Phrase #2 is ' consectetur adipiscing elit. Nullam non urna ac tortor suscipit euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut scelerisque'
+Phrase #3 is ' odio nec efficitur convallis'
+Phrase #4 is ' libero nisi facilisis urna'
+Phrase #5 is ' vitae lacinia neque libero et metus'
+Type a few phrases separated by comma (q - to quit):
+Type a few phrases separated by comma (q - to quit):
+,start with comma,ends with comma,
+Phrase #1 is 'start with comma'
+Phrase #2 is 'ends with comma'
+Type a few phrases separated by comma (q - to quit):
+hello@world,123!test,#hashtag
+Phrase #1 is 'hello@world'
+Phrase #2 is '123!test'
+Phrase #3 is '#hashtag'
+Type a few phrases separated by comma (q - to quit):
+
