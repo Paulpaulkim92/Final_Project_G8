@@ -261,3 +261,133 @@ To https://github.com/Paulpaulkim92/Final_Project_G8.git
    be5b78b..884e3a8  main -> main
 paulsik@Mac Final_Paul % 
 
+
+Type a few sentences separated by dot (q - to quit):
+....
+Type a few sentences separated by dot (q - to quit):
+This is a sentence. 123 !@#. Another sentence.
+Sentence #1 is 'This is a sentence'
+Sentence #2 is ' 123 !@#'
+Sentence #3 is ' Another sentence'
+Type a few sentences separated by dot (q - to quit):
+This is a very long single sentence without any delimiters or stops it just keeps going and going
+Sentence #1 is 'This is a very long single sentence without any delimiters or stops it just keeps going and going'
+Type a few sentences separated by dot (q - to quit):
+This is a sentence.
+Sentence #1 is 'This is a sentence'
+Type a few sentences separated by dot (q - to quit):
+This is the first sentence.   . Another sentence..
+Sentence #1 is 'This is the first sentence'
+Sentence #2 is '   '
+Sentence #3 is ' Another sentence'
+Type a few sentences separated by dot (q - to quit):
+.
+Type a few sentences separated by dot (q - to quit):
+Sentence 1. Sentence 2. Sentence 3. Sentence 4. Sentence 5. Sentence 6. Sentence 7. Sentence 8. Sentence 9. Sentence 10. Sentence 11. Sentence 12.
+Sentence #1 is 'Sentence 1'
+Sentence #2 is ' Sentence 2'
+Sentence #3 is ' Sentence 3'
+Sentence #4 is ' Sentence 4'
+Sentence #5 is ' Sentence 5'
+Sentence #6 is ' Sentence 6'
+Sentence #7 is ' Sentence 7'
+Sentence #8 is ' Sentence 8'
+Sentence #9 is ' Sentence 9'
+Sentence #10 is ' Sentence 10'
+Sentence #11 is ' Sentence 11'
+Sentence #12 is ' Sentence 12'
+Type a few sentences separated by dot (q - to quit):
+.................................................................................................................................................................................................................................................
+Type a few sentences separated by dot (q - to quit):
+q
+*** Start of Tokenizing Words Demo ***
+1 - Tokenize Words (space-separated)
+2 - Tokenize Phrases (comma-separated)
+3 - Tokenize Sentences (dot-separated)
+0 - Exit Tokenizing
+Your choice: 0
+*** End of Tokenizing Phrases Demo ***
+
+paulsik@Mac Final_Paul % clear
+
+paulsik@Mac Final_Paul % git status
+현재 브랜치 main
+커밋하도록 정하지 않은 변경 사항:
+  (무엇을 커밋할지 바꾸려면 "git add <파일>..."을 사용하십시오)
+  (use "git restore <file>..." to discard changes in working directory)
+	수정함:        git_status_log4_screenshot.txt
+	수정함:        tokenizing.c
+	수정함:        tokenizing_testing.txt
+
+커밋할 변경 사항을 추가하지 않았습니다 ("git add" 및/또는 "git commit -a"를
+사용하십시오)
+paulsik@Mac Final_Paul % git add .
+paulsik@Mac Final_Paul % git commit -m "v3"   
+[main 5741ea3] v3
+ 3 files changed, 180 insertions(+), 6 deletions(-)
+paulsik@Mac Final_Paul % git branch
+* main
+paulsik@Mac Final_Paul % git remote -v
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (fetch)
+origin	https://github.com/Paulpaulkim92/Final_Project_G8.git (push)
+paulsik@Mac Final_Paul % git push origin main
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+ ! [rejected]        main -> main (fetch first)
+error: 레퍼런스를 'https://github.com/Paulpaulkim92/Final_Project_G8.git'에 푸시하는데 실패했습니다
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+paulsik@Mac Final_Paul % git pull origin main --rebase
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+오브젝트 묶음 푸는 중: 100% (4/4), 1.51 KiB | 772.00 KiB/s, 완료.
+https://github.com/Paulpaulkim92/Final_Project_G8 URL에서
+ * branch            main       -> FETCH_HEAD
+   884e3a8..a35d028  main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+paulsik@Mac Final_Paul % git push origin main
+오브젝트 나열하는 중: 9, 완료.
+오브젝트 개수 세는 중: 100% (9/9), 완료.
+Delta compression using up to 8 threads
+오브젝트 압축하는 중: 100% (5/5), 완료.
+오브젝트 쓰는 중: 100% (5/5), 2.11 KiB | 2.11 MiB/s, 완료.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/Paulpaulkim92/Final_Project_G8.git
+   a35d028..1866075  main -> main
+paulsik@Mac Final_Paul % 
+
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 17:43:26 2024 -0500
+
+    v3
+
+commit a35d02860c5b2945e693d061a44042c004bbe98e
+Author: andreia006 <andreiabanny23@gmail.com>
+Date:   Fri Dec 6 16:48:45 2024 -0500
+
+    v1
+
+commit 884e3a8f8fcd12919311961b42066c39cc7884d8
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 16:26:23 2024 -0500
+
+    v2
+
+commit be5b78bfe43121269000f8d3926c756697cb52e3
+Author: Paul Kim <pkim31@myseneca.ca>
+Date:   Fri Dec 6 14:57:26 2024 -0500
+
+    v1
+
+commit ee4d78ccd326a7881e01723b4ee6e329f0329355
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Tue Dec 3 11:55:26 2024 -0500
+
+    v1
+paulsik@Mac Final_Paul % 
+

@@ -106,10 +106,3 @@ void tokenizing(void) {
 	printf("*** End of Tokenizing Phrases Demo ***\n\n"); // Prompt for the end of the demo.
 }
 
-#ifdef TESTING_MAIN
-int main(void) {
-	// Run the tokenizing function directly for testing
-	tokenizing();
-	return 0;
-}
-#endif
