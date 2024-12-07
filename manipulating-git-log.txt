@@ -1,3 +1,28 @@
+commit f289a32ca7878d2327fcd1038308c98fcd8b075c
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Sat Dec 7 12:36:17 2024 -0500
+
+    v2
+
+commit 2d9b9e9b437faa32d4cd21d29b12c1fefcca4bf1
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Sat Dec 7 12:33:12 2024 -0500
+
+    v1
+
+commit 98fc266236adeb6c1882f87b384815f3332e1cca
+Merge: aaafe32 cf8a4e3
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Sat Dec 7 12:26:07 2024 -0500
+
+    Merge branch 'main' of github.com:Paulpaulkim92/Final_Project_G8
+
+commit aaafe3234543083979b0af8428790b55096c8f4a
+Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
+Date:   Sat Dec 7 12:25:37 2024 -0500
+
+    v1
+
 commit 4cbae9146dbe54ac0ba6e2cf860245075c02ef6c
 Author: Paramvir Singh <paramvir-singh5@myseneca.ca>
 Date:   Sat Dec 7 12:23:22 2024 -0500
