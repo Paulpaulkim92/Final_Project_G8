@@ -30,8 +30,39 @@ void manipulating() {
 	printf(" *** End of Concatenating Strings Demo *** \n\n");
 
 
+	/* Version 2 */
+	/*The program allows the user to compare two strings and determine their lexicographical order. It repeatedly asks for two strings to compare until the user enters "q" to quit.*/
+	printf(" *** Start of Comparing Strings Demo *** \n");
+	char comparel[_BUFFER_SIZE];
+	char compare2[_BUFFER_SIZE];
+	int result;
+	do {
+		printf("Type the 1st string to compare (q - to quit) :\n");
+		// Read the first string
+		fgets(comparel, _BUFFER_SIZE, stdin);
+        // Remove the newline character from input
+		comparel[strlen(comparel) - 1] = '\0';
 
+		
+		if (strcmp(comparel, "q") != 0) {
+			printf("Type the 2nd string to compare:\n");
+             // Read the second string
+			fgets(compare2, _BUFFER_SIZE, stdin);
 
+			compare2[strlen(compare2) - 1] = '\0';
 
+			 // Compare the two strings and store the result
+			result = strcmp(comparel, compare2);
+			if (result < 0)
+				printf("\'%s\' string is less than \'%s\'\n", comparel, compare2);
+			else if (result == 0)
+				printf("\'%s\' string is equal to \'%s\'n", comparel, compare2);
+			else
+				printf("\'%s\' string is greater than \'%s\'n", comparel, compare2);
+
+		}
+	 } while (strcmp(comparel, "q") != 0);
+		printf(" *** End of Comparing Strings Demo *** n\n");
+	
 
 }
