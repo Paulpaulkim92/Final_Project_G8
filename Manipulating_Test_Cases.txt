@@ -12,15 +12,35 @@ Version 1
 -------------
 
 Manipulating    Typical Case    Input: "Hello", "World"    Expected Output: "HelloWorld"
+
 Manipulating    Minimal Edge Case    Input: "q"    Expected Output: Program should quit.
+
 Manipulating    Maximal Edge Case    Input: "A string of size _BUFFER_SIZE - 1 (which is 80 characters for _BUFFER_SIZE = 80), and another string of size 1 character (such as "A")."
                                         Expected Output: The concatenated string should be exactly _BUFFER_SIZE characters long (80 characters in this case), without causing any overflow or truncation.
+
 Manipulating    Input with Exceeding Buffer Size    Input: "Strings that would exceed _BUFFER_SIZE."
                                         Expected Output: Should either throw an error or handle properly with truncation.
+
 Manipulating    Multiple Spaces Between Words    Input: "Hello    ", "   World"    Expected Output: "Hello   World"
+
 Manipulating    Empty Strings Multiple Times    Input: "", "", ""    Expected Output: ""
+
 Manipulating    Concatenation with Non-ASCII Characters (Unicode)    Input: "Hello", "😊"    Expected Output: "Hello??"
+
 Manipulating    Invalid Characters    Input: 
         First string: "Hello\n" (string with a newline character).
         Second string: "World!" (valid string).
         Expected Output: The program should either remove or handle the newline character correctly, concatenating the strings to form "Hello                           World!".
+
+
+
+Version 2
+-------------------
+        
+Manipulations	+ minimal edge case	First string: q	The program should quit without any comparison.		PASS
+Manipulations	+ typical case	"First string: \"apple\"\nSecond string: \"banana\""	"apple" string is less than "banana"		PASS	Comparing two strings with expected lexicographical results.
+Manipulations	+ maximal edge case	"First string: A string of 79 characters, e.g., \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\nSecond string: A string that is identical to the first string (79 times \"a\"). "	Both strings are identical, so the result should indicate they are equal.		PASS
+Manipulations	Empty Strings Comparison	First string: "" Second string: ""	The two strings are equal.		PASS
+Manipulations	Leading Zeros Comparison	"First string: \"00123\"\nSecond string: \"0123\" "	Both are equall	00123' string is less than '0123'	Fail	It is because a string over her length is compared not the proper mathematicall value
+Manipulations	Numeric-Like Comparison	First string: "1000" Second string: "1001"	"1000" string is less than "1001".		Pass
+
