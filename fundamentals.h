@@ -1,6 +1,6 @@
 // FUNDAMENTALS MODULE HEADER
-#ifndef _FUNDAMENTALS_H_
-#define _FUNDAMENTALS_H_
+#ifndef FUNDAMENTALS_H_ 
+#define FUNDAMENTALS_H_
 
 #include <stdio.h>
 #include <stdlib.h>
