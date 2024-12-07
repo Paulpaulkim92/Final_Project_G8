@@ -44,3 +44,13 @@ Manipulations	Empty Strings Comparison	First string: "" Second string: ""	The tw
 Manipulations	Leading Zeros Comparison	"First string: \"00123\"\nSecond string: \"0123\" "	Both are equall	00123' string is less than '0123'	Fail	It is because a string over her length is compared not the proper mathematicall value
 Manipulations	Numeric-Like Comparison	First string: "1000" Second string: "1001"	"1000" string is less than "1001".		Pass
 
+
+Version3 
+---------------
+
+Manipulations	+ minimal edge case	Input: "q"	Input should quit/terminate the program.		Pass	Testing program response to minimal edge input.
+Manipulations	+ typical case	Input: haystack = "hello world", needle = "world"	Substring found at index 6. ("world")		Pass	Standard string concatenation.
+Manipulations	+ maximal edge case	Input: haystack = "aaaaaaaa...79 times", needle = "aaa"	Found at the start of the haystack (position 0).		Pass	Test case with long strings testing memory buffer limits.
+Manipulations	Special Characters	input: haystack = "abc\n", needle = "abc"	Found at the start of the haystack (position 0).		Pass	Test with escape sequences in input strings.
+
+
