@@ -52,7 +52,7 @@ void fundamentals(void) {
             printf("The length of '%s' is %d characters\n",
                 buffer2, (int)strlen(buffer2));
         }
-    } while (strcmp(buffer2, "q") != 0);
+    } while (strcmp(buffer2, "q") != 0); // END
 
     printf("*** End of Measuring Strings Demo ***\n\n");
 }
