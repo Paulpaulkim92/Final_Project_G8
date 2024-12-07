@@ -1,5 +1,11 @@
 C:\Users\yuuma\Final>git log
-commit 0abed438c6aab3b52b2900f00d77a30b165e25b5 (HEAD -> main)
+commit 6fb4c0518fa6577b6d6f014330b5de0a90556029 (HEAD, main)
+Author: yuma <ykawai@myseneca.ca>
+Date:   Sat Dec 7 15:16:27 2024 -0500
+
+    v3
+
+commit 0abed438c6aab3b52b2900f00d77a30b165e25b5
 Author: yuma <ykawai@myseneca.ca>
 Date:   Sat Dec 7 13:33:11 2024 -0500
 
