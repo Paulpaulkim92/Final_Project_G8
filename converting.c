@@ -25,16 +25,28 @@ void converting(void) {
 	double doubleNumber;
 	do {// This program/section runs until the user decides to quit. if the one above is quitted, it will go to this one.
 		printf("Type the double numeric string (q - to quit):\n");
-		fgets(doubleString, BUFFER_SIZE, stdin); //fgets will read every character of user input until BUFFER_SIE - 1.
+		fgets(doubleString, BUFFER_SIZE, stdin); //fgets will read every character of user input until BUFFER_SIZE - 1.
 		doubleString[strlen(doubleString) - 1] = '\0';
 		if ((strcmp(doubleString, "q") != 0)) { //If the user input is NOT q
-			doubleNumber = atof(doubleString); //This will convert the user input to a double/float
+			doubleNumber = atof(doubleString); //This will convert the user input to a double
 			printf("Converted number is %f\n", doubleNumber);
 		}
 	} while (strcmp(doubleString, "q") != 0); //Section will quit if the input is q.
 	printf("*** End of Converting String to double Demo ***\n\n");
-}
 
 
 	/* Version 3 */
-	//>> insert here
+	printf("*** Start if Converting String to long Demo **\n"); //Intro to converting string to long.
+	char longString[BUFFER_SIZE];
+	long longNumber;
+	do {// Thhis setion runs until the user decides to quit. If the one abive is quit, it will go to this one.
+		printf("Type the long numeric string (q - to quit):\n");
+		fgets(longString, BUFFER_SIZE, stdin); //fgets will read every character of user input until BUFFER_SIZE - 1.
+		longString[strlen(longString) - 1] = '\0';
+		if ((strcmp(longString, "q") != 0)) { //If the user input is NOT q
+			longNumber = atol(longString); //This will convert the user input to a double
+			printf("Converted number is %ld\n", longNumber);
+		}
+	} while (strcmp(longString, "q") != 0); //Section will quit if the input is q.
+	printf("*** End of Converting String to long Demo ***\n\n");
+}
