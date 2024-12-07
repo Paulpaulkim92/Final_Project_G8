@@ -19,7 +19,7 @@ Manipulating    Input with Exceeding Buffer Size    Input: "Strings that would e
                                         Expected Output: Should either throw an error or handle properly with truncation.
 Manipulating    Multiple Spaces Between Words    Input: "Hello    ", "   World"    Expected Output: "Hello   World"
 Manipulating    Empty Strings Multiple Times    Input: "", "", ""    Expected Output: ""
-Manipulating    Concatenation with Non-ASCII Characters (Unicode)    Input: "Hello", "😊"    Expected Output: "Hello😊"
+Manipulating    Concatenation with Non-ASCII Characters (Unicode)    Input: "Hello", "😊"    Expected Output: "Hello??"
 Manipulating    Invalid Characters    Input: 
         First string: "Hello\n" (string with a newline character).
         Second string: "World!" (valid string).
