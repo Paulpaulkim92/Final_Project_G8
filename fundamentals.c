@@ -55,4 +55,32 @@ void fundamentals(void) {
     } while (strcmp(buffer2, "q") != 0); // END
 
     printf("*** End of Measuring Strings Demo ***\n\n");
+
+    // V3
+    printf("*** Start of Copying Strings Demo ***\n");
+
+    char destination[BUFFER_SIZE];
+    char source[BUFFER_SIZE];
+
+    do {
+        // Reset the destination string to an empty state
+        destination[0] = '\0';
+        printf("Destination string is reset to empty.\n");
+
+        // Prompt the user to input a string
+        printf("Type the source string (q - to quit):\n");
+        fgets(source, BUFFER_SIZE, stdin);
+
+        // Remove newline character from the input
+        source[strlen(source) - 1] = '\0';
+
+        // Check if the input string is not "q"
+        if (strcmp(source, "q") != 0) {
+            // Copy source string to destination
+            strcpy(destination, source);
+            printf("New destination string is '%s'\n", destination);
+        }
+    } while (strcmp(source, "q") != 0);
+
+    printf("*** End of Copying Strings Demo ***\n");
 }

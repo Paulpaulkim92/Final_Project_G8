@@ -1,0 +1,81 @@
+//Version 1
+
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+
+Type the character position within the string:
+0
+The character found at 0 position is ' '
+Type not empty string (q - to quit):
+Hello World
+Type the character position within the string:
+2
+The character found at 2 position is 'l'
+Type not empty string (q - to quit):
+abcdefghijklmnopqrstuvwxyzABCDEFG""HIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-+_=
+Type the character position within the string:
+98
+Too big... Position reduced to max. available
+The character found at 77 position is '='
+Type not empty string (q - to quit):
+a
+Type the character position within the string:
+0
+The character found at 0 position is 'a'
+Type not empty string (q - to quit):
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Type the character position within the string:
+The character found at 0 position is 'a'
+
+//version 2
+
+*** Start of Measuring Strings Demo ***
+Type a string (q to quit):
+a
+The length of 'a' is 1 characters
+Type a string (q to quit):
+hello
+The length of 'hello' is 5 characters
+Type a string (q to quit):
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+The length of 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' is 78 characters
+Type a string (q to quit):
+
+The length of '' is 0 characters
+Type a string (q to quit):
+hello everyone
+The length of 'hello everyone' is 14 characters
+Type a string (q to quit):
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+The length of 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' is 78 characters
+Type a string (q to quit):
+The length of 'aaa' is 3 characters
+
+//version 3
+
+*** Start of Copying Strings Demo ***
+Destination string is reset to empty.
+Type the source string (q - to quit):
+
+New destination string is ''
+Destination string is reset to empty.
+Type the source string (q - to quit):
+hello
+New destination string is 'hello'
+Destination string is reset to empty.
+Type the source string (q - to quit):
+hello everyone
+New destination string is 'hello everyone'
+Destination string is reset to empty.
+Type the source string (q - to quit):
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+New destination string is 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+Destination string is reset to empty.
+Type the source string (q - to quit):
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+New destination string is 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+Destination string is reset to empty.
+Type the source string (q - to quit):
+New destination string is 'aaaaaaaaaaaaaaaaaaaaaaaaaa'
+Destination string is reset to empty.
